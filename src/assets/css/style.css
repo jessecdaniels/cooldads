@@ -1,0 +1,143 @@
+/**
+ * This is the main CSS entry for your application.
+ */
+
+ /**
+ * This is the main CSS entry for your application.
+ */
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+  font-size: 10px;
+}
+
+.logo {
+	width: 300px;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffffff;
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  border-style: dashed;
+  border-top-color: ghostwhite;
+  border-top-width: 0px;
+  border-left-color: ghostwhite;
+  border-left-width: 0px;
+  border-right-color: ghostwhite;
+  border-right-width: 0px;
+  border-bottom-color:rgb(69, 150, 105);
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  position: absolute;
+  top: 50px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  color:rgb(38, 143, 85);
+  border-radius: 20px;
+  padding: 6rem;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  text-align: justify;
+}
+button {
+  margin-top: 40px;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: rgb(38, 143, 85);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+
+h1{
+  text-align: center;
+}
+
+#canvas {
+  position: relative; 
+  height: 600px;
+  width: 900px;
+  border: 2px dashed rgb(38, 143, 85);
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow{
+  position: relative; 
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: white;
+  opacity: .8;
+
+}
+
+.image{
+  width: 35px;
+  height: 35px;
+}
+
+.arrow:hover{
+  background-color: green;
+}
+
+/* Style the footer */
+.footer {
+    color: rgb(255, 255, 255);
+    background-color:rgb(38, 143, 85);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
