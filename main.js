@@ -1,9 +1,5 @@
-/**
- * This is the main JavaScript entry for your application.
- */
- 
 // ------------------------------------------
-//  FETCH FUNCTIONS
+//  FETCH FUNCTION
 // ------------------------------------------
 
 const button = document.querySelector(".container button");
@@ -26,26 +22,12 @@ async function getJoke() {
 
 
 // ------------------------------------------
-//  HELPER FUNCTIONS
+// Dad meme Slideshow or possibly stock photo of dads using aray
 // ------------------------------------------
-
-      
-
-// ------------------------------------------
-//  EVENT LISTENERS
-// ------------------------------------------
-
-
-
-// ------------------------------------------
-//  POST DATA
-// ------------------------------------------
-
-// Dads Slideshow
 
 // create an array of image sources;
 let images = [
-  'image1.png', 'image2.png', 'image3.png','image4.png'
+  'dadmeme1.jpg', 'dadmeme2.jpg', 'dadmeme4.jpg','dadmeme5.jpg'
 ]
 let i = 0;
 
