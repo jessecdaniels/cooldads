@@ -11,18 +11,19 @@
 
 <!-- Add seconday headline "A Place for Cool Dads" maybe make title seperate from PNG file-->
 <header class="header">
-  <h1>Socks Plus Sandles</h1> 
-  <img class="logo" src="images/sock-logo1.png" alt="Socks Plus Sandles // A Place For Cool Dads"/>
+  
+  <img class="logo" src="images/socks-dads-main.png" alt="Socks Plus Sandles // A Place For Cool Dads"/>
+  <h1>SOCKS PLUS SANDALS</h1>
+  <h2>(a website for cool dads)</h2> 
 </header>
 
  <main>
 <!-- figure out row/column layout with flexbox-->
 <!-- Add graphic "because cool dads love dad jokes"  -->
 
-
 <section class="row column">
-<h2>Dad Jokes Generator</h2> 
-<img src="https://placehold.it/100" alt="dad badge 1">
+<h3>Dad Jokes Generator</h3> 
+<img src="images/jokes-badge.png" alt="dad badge 1">
       <div class="container">
       <div class="joke">
         <p></p>
@@ -31,18 +32,41 @@
       </div>
 </section>
 
-<section class="row column">
-  <h2>Dad Memes Slideshow</h2> 
-  <!-- Add graphic "because cool dads love a good meme"  -->
-   
+<section class="row2 column">
+  <h3>Dad Memes Slideshow</h3> 
     <div id="canvas">
         <div class="arrow" ><img id="left" src="/images/left-arrow.png" class="image"></div>
         <div class="arrow" ><img id="right" src="/images/right-arrow.png" class="image"></div>
     </div>
-<img src="https://placehold.it/200" alt="dad badge 2">
+<img class= "badge" src="images/memes-badge.png" alt="dad badge 2">
 </section>
-  </main>
 
+<section class="container">
+  <form>
+    <ul class="flex-outer">
+      <li>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" placeholder="Enter your first name here">
+      </li>
+      <li>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" placeholder="Enter your last name here">
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email here">
+      </li>
+      <li>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Enter your phone here">
+      </li>
+      <li>
+        <label for="message">Message</label>
+        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+      </li>
+      <li>
+
+</main>
   <!-- Add small SVG graphic to footer / maybe a lawn mower or crushed beer can -->
 <footer class="footer">
   <p>2021 Socks Plus Sandles // A Place For Cool Dads</p>
