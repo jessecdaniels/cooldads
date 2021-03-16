@@ -1,17 +1,4 @@
-/**
- * This is the main CSS entry for your application.
- */
-
- /**
- * This is the main CSS entry for your application.
- */
-
-/* ================================= 
-  Base Element Styles
-==================================== */
-
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -22,39 +9,80 @@ html {
   font-size: 10px;
 }
 
-.logo {
-	width: 300px;
+h1 {
+  font-weight:400
 }
 
-/* Style the header */
+h2 {
+
+  font-weight: 300;
+}
+
+h3 {
+  display: none;
+}
+
+.logo {
+	width: 250px;
+
+}
+
 .header {
   background-color: #ffffff;
-  padding: 0px;
   text-align: center;
-  font-size: 35px;
-  border-style: dashed;
-  border-top-color: ghostwhite;
-  border-top-width: 0px;
-  border-left-color: ghostwhite;
-  border-left-width: 0px;
-  border-right-color: ghostwhite;
-  border-right-width: 0px;
-  border-bottom-color:rgb(69, 150, 105);
+  padding-bottom: 20px;
+  font-size: 20px;
+  border-style: solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-color: rgb(38, 143, 85);
+  box-shadow: 5px 5px rgb(171, 253, 171);
+
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-image: white
 }
 /* Container for flexboxes */
 .row {
+  padding: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  margin-right: 50px;
+  background: transparent;
+  background-image: linear-gradient(180deg, #dcffb8 0, #c7ffba 16.67%, #b1ffba 33.33%, #9df2b9 50%, #8be4b7 66.67%, #7cd7b5 83.33%, #70ccb4 100%);
+  z-index: 1;
+  text-align: center;
+
+}
+ 
+
+.row2 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  background: transparent;
+  background-image: linear-gradient(180deg, #dcffb8 0, #c7ffba 16.67%, #b1ffba 33.33%, #9df2b9 50%, #8be4b7 66.67%, #7cd7b5 83.33%, #70ccb4 100%);
+  z-index: 1;
+  text-align: center;
 }
 
-/* Create three equal columns that sits next to each other */
+/* Create 2 equal columns that sits next to each other */
 .column {
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 section {
@@ -63,13 +91,6 @@ section {
   align-items: center;
   justify-content: center;
 }
-.title {
-  position: absolute;
-  top: 50px;
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-}
 
 .container {
   margin: 0 15px;
@@ -77,21 +98,23 @@ section {
   background-color: rgb(255, 255, 255);
   color:rgb(38, 143, 85);
   border-radius: 20px;
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 5px;
+  border: 2px solid;
+  padding: 40px;
+  box-shadow: 5px 5px rgb(171, 253, 171);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container p {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 3rem;
   text-align: justify;
 }
+
 button {
-  margin-top: 40px;
+  margin-top: 80px;
   width: fit-content;
   padding: 1rem;
   font-size: 2rem;
@@ -100,27 +123,21 @@ button {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  align-self:flex-end
+  align-self: flex-end;
 }
 
-
-h1 {
-  display: none;
-}
-
-h2 {
-  display: none;
-}
 
 #canvas {
   position: relative; 
   height: 600px;
   width: 800px;
   max-width: 100%;
-  border: dashed rgb(38, 143, 85);
-  margin: auto;
-  margin-bottom: 60px;
+  border: 2px solid rgb(38, 143, 85);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  margin-right: 20px;
   box-sizing: border-box;
+  box-shadow: 5px 5px rgb(171, 253, 171);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,6 +163,12 @@ h2 {
 .arrow:hover{
   background-color:rgb(116, 115, 115)
 }
+
+.badge {
+  padding: 50 px; 
+
+}
+
 
 /* Style the footer */
 .footer {
