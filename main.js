@@ -1,9 +1,10 @@
 // ----------------------------------------------------------------
-// Fetch function for dad joke generator 
+// Fetch for dad joke generator 
 // ----------------------------------------------------------------
 
 const button = document.querySelector(".container button");
 const jokeDiv = document.querySelector(".container .joke p");
+
 
 document.addEventListener("DOMContentLoaded", getJoke);
 
@@ -22,13 +23,14 @@ async function getJoke() {
 
 
 // ----------------------------------------------------------------
-// Dad meme slideshow array
+// Array: Dad meme slideshow
 // ----------------------------------------------------------------
 
 // create an array of image sources;
 let images = [
-  'dadmeme1.jpg', 'dadmeme2.jpg', 'dadmeme4.jpg', 'dadmeme5.jpg', 
-  'dadmeme6.jpg', 'dadmeme7.jpg', 'dadmeme8.jpg' 
+  'dadmeme11.jpg', 'dadmeme1.jpg', 'dadmeme2.jpg', 'dadmeme3.jpg', 
+  'dadmeme4.jpg', 'dadmeme5.jpg','dadmeme6.jpg', 'dadmeme7.jpg', 
+  'dadmeme8.jpg', 'dadmeme9.jpg', 'dadmeme10.jpg', 'dadmeme12.jpg' 
 ]
 let i = 0;
 
@@ -57,4 +59,10 @@ arrows.forEach(function(arrow){
       }
   })
 });
-  
+
+// --------------------------------------------------------------------
+// POST & Save: Ask a dad feature / saves to CSV file stored on server
+// --------------------------------------------------------------------
+
+ 
+ 
