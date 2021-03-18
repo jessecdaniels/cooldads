@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------
-// Fetch for dad joke generator 
+// Fetch: Dad joke generator 
 // ----------------------------------------------------------------
 
 const button = document.querySelector(".container button");
@@ -35,8 +35,8 @@ let images = [
 let i = 0;
 
 //add initial image to canvas
-let canvas = document.getElementById('canvas');
-canvas.style.backgroundImage = `url(./images/${images[0]})`
+let slideshow = document.getElementById('slideshow');
+slideshow.style.backgroundImage = `url(./images/${images[0]})`
 
 //add eventListeners to arrows
 let arrows = document.querySelectorAll('.arrow');
@@ -49,20 +49,44 @@ arrows.forEach(function(arrow){
           if (i < 0){
               i = images.length -1;
           }
-          canvas.style.backgroundImage = `url(./images/${images[i]})`;
+          slideshow.style.backgroundImage = `url(./images/${images[i]})`;
       } else if (e.target.id === "right") {
           i++;
           if (i >= images.length ){
               i = 0;
           }
-          canvas.style.backgroundImage = `url(./images/${images[i]})`;
+          slideshow.style.backgroundImage = `url(./images/${images[i]})`;
       }
   })
 });
 
 // --------------------------------------------------------------------
-// POST & Save: Ask a dad feature / saves to CSV file stored on server
+// Validate contact form
 // --------------------------------------------------------------------
 
+document.querySelector("form").addEventListener("submit", validateForm);
+
+function validateForm(event) {
+  var fname = document.forms["contactForm"]["fname"].value;
+  var lname = document.forms["contactForm"]["lname"].value;
+  var email = document.forms["contactForm"]["email"].value;
+  var validate = document.forms["contactForm"]["validate"].value;
+
+
+  if (fname == null || fname == "") {
+      alert("First name must be filled out"); // alert user if first name field is missing 
+      event.preventDefault();
+  } else if (lname == null || lname == "") { 
+      alert("Last name must be filled out"); // alert user if last name field is missing 
+      event.preventDefault();
+  } else if (email == null || email == "") { 
+      alert("Email must be filled out"); // alert user if last name field is missing 
+      event.preventDefault();
+  } else if (validate != 4) { 
+      alert("Maybe ask a Cool Dad for help with your math, try again?"); // if user gives any answer other than 4 they give an alert message
+      event.preventDefault();
+  }
+}
  
+
  
