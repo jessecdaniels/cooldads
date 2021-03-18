@@ -10,20 +10,33 @@
 <body>
 
 <!-- Add seconday headline "A Place for Cool Dads" maybe make title seperate from PNG file-->
-<header class="header">
-  
+<header>
   <img class="logo" src="images/socks-dads-main.png" alt="Socks Plus Sandles // A Place For Cool Dads"/>
   <h1>SOCKS PLUS SANDALS</h1>
   <h2>(a website for cool dads)</h2> 
-</header>
 
+<!-- <nav>
+  <ul class="main-nav">
+        <li><a href="">About Cool Dads</a></li>
+        <li><a href="">Dad Jokes</a></li>
+        <li><a href="">Dad Memes</a></li>
+        <li><a href="#">Touch Base</a></li>
+        <li class="push"><a href="">Contact</a></li>
+  </ul>
+</nav> -->
+
+<!-- End "nav" -->
+
+
+
+</header>
  <main>
 <!-- figure out row/column layout with flexbox-->
 <!-- Add graphic "because cool dads love dad jokes"  -->
 
 <section class="row column">
 <h3>Dad Jokes Generator</h3> 
-<img src="images/jokes-badge.png" alt="dad badge 1">
+<img class="badge1" src="images/wreath-jokes-fade.png" alt="dad badge 1">
       <div class="container">
       <div class="joke">
         <p></p>
@@ -34,42 +47,38 @@
 
 <section class="row2 column">
   <h3>Dad Memes Slideshow</h3> 
-    <div id="canvas">
-        <div class="arrow" ><img id="left" src="/images/left-arrow.png" class="image"></div>
-        <div class="arrow" ><img id="right" src="/images/right-arrow.png" class="image"></div>
+    <div id="slideshow">
+        <div class="arrow"><img id="left" src="/images/left-arrow.png" class="arrow-image"></div>
+        <div class="arrow"><img id="right" src="/images/right-arrow.png" class="arrow-image"></div>
     </div>
-<img class= "badge" src="images/memes-badge.png" alt="dad badge 2">
+<img class= "badge2" src="images/wreath-memes-fade.png" alt="dad badge 2">
 </section>
 
-<section class="container">
-  <form>
-    <ul class="flex-outer">
-      <li>
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" placeholder="Enter your first name here">
-      </li>
-      <li>
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" placeholder="Enter your last name here">
-      </li>
-      <li>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email here">
-      </li>
-      <li>
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="Enter your phone here">
-      </li>
-      <li>
-        <label for="message">Message</label>
-        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
-      </li>
-      <li>
+<section class="row3 column container2">
+  <img class= "badge3" src="images/wreath-contact-fade.png">
+				<form name="contactForm" action="" method="post">
+			  	<h3>Contact Form</h3>
+					<label for="fname">First Name:</label> 
+					<input type="text" name="fname" id="fname" placeholder="First Name">
+					<label for="lname">Last Name:</label> 
+					<input type="text" name="lname" id="lname" placeholder="Last Name">
+					<label for="email">Email:</label>
+					<input type="email" id="email" placeholder="email@website.com">
+					<label for="validate">What is 3 + 1?:</label> 
+					<input type="text" name="validate" id="validate">
+	  			<label for="msg">Message:</label>
+			 		<textarea id="msg" rows="5"></textarea>
+					<input class="btn-submit" type="submit" value="Submit">
+					<input class="btn-reset" type="reset" value="Reset"> 
+				</form>
 
 </main>
-  <!-- Add small SVG graphic to footer / maybe a lawn mower or crushed beer can -->
-<footer class="footer">
-  <p>2021 Socks Plus Sandles // A Place For Cool Dads</p>
+
+<footer>
+  <img src="images/beer-cheers.png">
+  <p>&copy;2021 Socks Plus Sandles // a place for cool dads</p>
+  <img src="images/beer-cheers.png">
+  
 </footer>
 
 <script src="main.js"></script>
