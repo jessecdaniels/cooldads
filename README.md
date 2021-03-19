@@ -1,6 +1,6 @@
 
 # **Socks Plus Sandles // A Place For Cool Dads**  
-# :muscle: :metal: :walking: :thumbsup: :tool :lawn mower:
+# :muscle: :metal: :walking: :thumbsup: :tool: :lawn mower:
 
 ### Problem: Create a website for Cool Dads
 ### Solution: Use a public API to get Cool Dad jokes, iterate through some great Cool Dad memes, and Touch Base with Cool Dads through a contact form
