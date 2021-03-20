@@ -1,6 +1,6 @@
 
 # **Socks Plus Sandles // A Place For Cool Dads**  
-# :muscle: :walking: :thumbsup: :beers: :doughnut: :metal:
+# :muscle: :walking: :thumbsup: :beers: :doughnut: :metal: :camera: :briefcase:
 
 ### Problem: Create a website for Cool Dads
 ### Solution: Use a public API to get Cool Dad jokes, iterate through some great Cool Dad memes, and Touch Base with Cool Dads through a contact form
@@ -21,9 +21,9 @@
     4. This "Cool Dads" bio and his 2 Cool Dads bio.
 
 ## Goals year 1
-    1. Appear on first 4 pages of a Google search for "Dads"
+    1. Optimize SEO // Appear on first 4 pages of a Google search for "Dads"
 ## Goals year 2
-    1. Appear on first 2 pages of a Google search for "Dads"
+    1. Advertisement placement
 
 ## *Acknowledgements*
 The Official [National Fatherhod Intiatve!](https://www.fatherhood.org/) Website    
