@@ -1,6 +1,6 @@
 
 # **Socks Plus Sandles // A Place For Cool Dads**  
-<p align="center"> :muscle: :walking: :thumbsup: :beers: :doughnut: :metal: :camera: :briefcase:</p>
+# <p align="center"> :muscle: :walking: :thumbsup: :beers: :doughnut: :metal: :camera: :briefcase:</p>
 
 ### Problem: Create a website for Cool Dads
 ### Solution: Use a public API to get Cool Dad jokes, iterate through some great Cool Dad memes, and Touch Base with Cool Dads through a contact form
