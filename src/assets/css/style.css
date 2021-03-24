@@ -9,7 +9,7 @@ html {
   font-size: 10px;
 }
 h1 {
-  font-weight:400
+  font-weight:400;
 }
 h2 {
   font-weight: 300;
@@ -21,17 +21,11 @@ h3 {
 	width: 250px;
 }
 header {
-  background-color: #ffffff;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 20px;
-  border-style: solid;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  border-color: rgba(228, 228, 228, 0.534);
 }
-
+ 
 /* Navigation */
 nav {
   display: flex;
@@ -58,6 +52,7 @@ body {
 nav a {
   color: rgb(3, 12, 84);
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 /* Container for flexboxes */
@@ -68,10 +63,10 @@ nav a {
   display: flex;
   border-top-right-radius: 200px;
   border-bottom-right-radius: 200px;
-  background-image: linear-gradient(to right, rgba(148, 255, 148, 0), rgb(224, 252, 231));
-  box-shadow: 5px 5px rgb(175, 255, 215);
-  z-index: 1;
-
+  margin-right: 50px;
+  background-color: rgb(243, 248, 255);
+  box-shadow: 5px 5px rgb(0, 229, 255);
+ 
 }
 .row2 {
   margin-top: 40px;
@@ -83,9 +78,9 @@ nav a {
   margin-left: 50px;
   margin-bottom: 40px;
   background: transparent;
-  background-image: linear-gradient(to left, rgba(148, 255, 148, 0), rgba(224, 252, 231, .8));
-  box-shadow: 5px 5px rgb(175, 255, 215);
-  z-index: 1;
+  background-color: rgb(243, 248, 255);
+  box-shadow: 5px 5px rgb(0, 229, 255);
+ 
 }
 .row3 {
   padding: 50px;
@@ -97,10 +92,9 @@ nav a {
   border-top-right-radius: 200px;
   border-bottom-right-radius: 200px;
   margin-right: 50px;
-  background-blend-mode: saturation;
-  background-image: linear-gradient(to right, rgba(148, 255, 148, .4), rgba(224, 252, 231, .5));
-  box-shadow: 5px 5px rgb(175, 255, 215);
-  z-index: 1; 
+  background-color: rgb(243, 248, 255);
+  box-shadow: 5px 5px rgb(0, 229, 255);
+ 
 }
 
 /* Create 2 equal columns that sits next to each other */
@@ -113,12 +107,13 @@ nav a {
   margin: 40px 40px 40px 60px;
   max-width: 500px;
   min-height: 500px;
-  color:rgb(38, 143, 85);
+  color:rgb(55, 55, 55);
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   border: 2px solid;
+  border-color: tomato;
   padding: 50px;
-  box-shadow: 5px 5px rgb(171, 253, 171);
+  box-shadow: 5px 5px rgb(0, 229, 255);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -127,32 +122,44 @@ nav a {
 .container p {
   font-size: 3rem;
   font-weight: 300;
+  margin-right: 40px;
   line-height: 3rem;
   text-align: justify;
+  
 }
 button {
   margin-top: 80px;
   width: fit-content;
   padding: 1rem;
   font-size: 2rem;
-  background-color: rgb(38, 143, 85);
-  color: white;
+  background-color: rgb(117, 170, 220);
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 20px;
+  box-shadow: 0 6px #999;
+  text-transform: uppercase;
   cursor: pointer;
   align-self: flex-end;
+}
+button:hover {background-color: rgb(117, 170, 220)}
+button:active {
+  background-color: rgb(54, 99, 142);
+  box-shadow: 0 3px #666;
+  display: flex;
+  transform: translateY(4px);
 }
 #slideshow {
   position: relative; 
   height: 400px;
   width: 600px;
   margin-top: 50px;
-  border: 2px solid rgb(38, 143, 85);
+  border: 2px solid tomato;
   border-radius: 20px;
   margin-bottom: 50px;
   margin-right: 20px;
+  background-color: white;
   box-sizing: border-box;
-  box-shadow: 5px 5px rgb(171, 253, 171);
+  box-shadow: 5px 5px rgb(0, 229, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -176,7 +183,7 @@ textarea {
   height: 35px;
 }
 .arrow-image:hover{
-  background-color: aquamarine;
+  background-color: rgb(0, 229, 255);
 }
 .badge1 {
   margin: 40px 40px 40px 40px;
@@ -227,7 +234,7 @@ label {
   width: fit-content;
   padding: 1rem;
   font-size: 2rem;
-  background-color: rgb(38, 143, 85);
+  background-color: rgb(54, 99, 142);
   color: white;
   border: none;
   border-radius: 20px;
@@ -235,27 +242,51 @@ label {
   cursor: pointer;
   align-self: flex-end;
 }
+
+
+/* button {
+  margin-left: auto;
+  margin-top: 20px;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: rgb(117, 170, 220);
+  color: rgb(255, 255, 255);
+  border: none;t statu
+  border-radius: 20px;
+  box-shadow: 0 6px #999;
+  cursor: pointer;
+  align-self: flex-end;
+}
+button:hover {background-color: rgb(117, 170, 220)}
+button:active {
+  background-color: rgb(54, 99, 142);
+  box-shadow: 0 3px #666;
+  display: flex;
+  transform: translateY(4px);
+}
+*/
+
 .btn-reset {
   margin-left: 2rem;
   margin-top: 20px;
   width: fit-content;
   padding: 1rem;
   font-size: 2rem;
-  background-color: rgb(38, 143, 85);
+  background-color: rgb(54, 99, 142);
   color:rgb(255, 255, 255);
   border: none;
   border-radius: 20px;
   text-transform: uppercase;
   cursor: pointer;
   align-self: flex-start;
-
 }
 
 /* Style the footer */
 footer {
   padding: 20px;
   color: rgb(255, 255, 255);
-  background-color:rgb(38, 143, 85);
+  background-color: rgb(43, 109, 181);
   font-size: 20px;
   display: flex;
   justify-content: center;
@@ -297,7 +328,7 @@ margin: 0 20px;
       display: block;
     }
     .logo {
-      width: 40%;
+      width: 30%;
       max-width: 250px;
     }
 }
