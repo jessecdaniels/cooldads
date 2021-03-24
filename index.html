@@ -11,27 +11,32 @@
 
 <header>
   <img class="logo" src="images/socks-dads-main.png" alt="Socks Plus Sandles // A Place For Cool Dads"/>
-  <h1>SOCKS PLUS SANDALS</h1>
-  <h2>(a website for cool dads)</h2> 
+  <div class="headline-box">
+    <div class="box">  
+    <h1>SOCKS PLUS SANDALS</h1>
+    <h2>(a website for cool dads)</h2> 
+  </div>
+  </div>
 
 <nav>
   <ul class="main-nav">
-    <li><a href="">Dad Jokes</a></li>
-    <li><a href="">Dad Memes</a></li>
+    <li><a href="#jokes">DAD JOKES</a></li>
+    <li><a href="#slideshow">DAD MEMES</a></li>
   </ul>
   <ul class="main-nav">
-    <li><a href="#">Touch Base</a></li>
-    <li><a href="">About</a></li>
+    <li><a href="#contact">TOUCH BASE</a></li>
+    <li><a href="">ABOUT</a></li>
 </ul>
 </nav>
 
 </header>
- <main> 
+ <main>
+ 
 <section class="row column">
   <h3>Dad Jokes Generator</h3> 
     <img class="badge1" src="images/wreath-jokes-fade.png" alt="dad badge 1">
       <div class="container">
-      <div class="joke">
+      <div class="joke" id="jokes">
         <p></p>
       </div>
       <button>Dad Joke Button</button>
@@ -49,7 +54,7 @@
 
 <section class="row3 column container2">
   <img class= "badge3" src="images/wreath-contact-fade.png">
-				<form name="contactForm" action="" method="post">
+				<form name="contactForm" action="" method="post"  id="contact">
 			  	<h3>Contact Form</h3>
 					<label for="fname">First Name:</label> 
 					<input type="text" name="fname" id="fname" placeholder="First Name">
