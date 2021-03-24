@@ -8,23 +8,18 @@ html {
   font-family: "Montserrat";
   font-size: 10px;
 }
-
 h1 {
   font-weight:400
 }
-
 h2 {
   font-weight: 300;
 }
-
 h3 {
   display: none;
 }
-
 .logo {
 	width: 250px;
 }
-
 header {
   background-color: #ffffff;
   text-align: center;
@@ -38,31 +33,34 @@ header {
 }
 
 /* Navigation */
-
-/* .main-nav {
-  display: inline-flex;
-  
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 5px;
+  left: 25%;
+  width: 50%;
 }
-  
-.push {
-  margin-left: auto;
-}
-
 ul {
-margin-left: auto;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-
 li {
-    margin: 30px;
-    padding: 5px;
-    margin-left: auto;
-} */
-
+  margin: 30px;
+  padding: 5px;
+  margin-left: auto;
+  display:inline-block;
+}
 body {
   background-color: white;
 }
-/* Container for flexboxes */
+nav a {
+  color: rgb(3, 12, 84);
+  text-decoration: none;
+}
 
+/* Container for flexboxes */
 .row {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -75,7 +73,6 @@ body {
   z-index: 1;
 
 }
- 
 .row2 {
   margin-top: 40px;
   display: flex;
@@ -86,11 +83,10 @@ body {
   margin-left: 50px;
   margin-bottom: 40px;
   background: transparent;
-  background-image: linear-gradient(to left, rgba(148, 255, 148, 0), rgb(224, 252, 231));
+  background-image: linear-gradient(to left, rgba(148, 255, 148, 0), rgba(224, 252, 231, .8));
   box-shadow: 5px 5px rgb(175, 255, 215);
   z-index: 1;
 }
-
 .row3 {
   padding: 50px;
   margin-top: 40px;
@@ -101,41 +97,39 @@ body {
   border-top-right-radius: 200px;
   border-bottom-right-radius: 200px;
   margin-right: 50px;
-  background-image: linear-gradient(to right, rgba(148, 255, 148, 0), rgb(224, 252, 231));
+  background-blend-mode: saturation;
+  background-image: linear-gradient(to right, rgba(148, 255, 148, .4), rgba(224, 252, 231, .5));
   box-shadow: 5px 5px rgb(175, 255, 215);
   z-index: 1; 
 }
 
 /* Create 2 equal columns that sits next to each other */
-
 .column {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-
 .container {
   margin: 40px 40px 40px 60px;
   max-width: 500px;
-  max-height: 500px;
-  background-color: rgb(255, 255, 255);
+  min-height: 500px;
   color:rgb(38, 143, 85);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   border: 2px solid;
   padding: 50px;
   box-shadow: 5px 5px rgb(171, 253, 171);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-self: center;
 }
-
 .container p {
   font-size: 3rem;
   font-weight: 300;
   line-height: 3rem;
   text-align: justify;
 }
-
 button {
   margin-top: 80px;
   width: fit-content;
@@ -147,9 +141,7 @@ button {
   border-radius: 20px;
   cursor: pointer;
   align-self: flex-end;
- 
 }
-
 #slideshow {
   position: relative; 
   height: 400px;
@@ -167,9 +159,10 @@ button {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
-
+textarea {
+  resize: none;
+}
 .arrow{
   position: relative; 
   z-index: 1;
@@ -178,31 +171,25 @@ button {
   padding: 5px;
   box-sizing: border-box;
 }
-
 .arrow-image{
   width: 35px;
   height: 35px;
 }
-
 .arrow-image:hover{
   background-color: aquamarine;
 }
-
 .badge1 {
   margin: 40px 40px 40px 40px;
   height: 300px;
   width: 300px;
   align-self: center;
- 
 }
-
 .badge2 {
   margin: 40px 40px 40px 40px;
   height: 300px;
   width: 300px;
   align-self: center;
 }
-
 .badge3 {
   margin: 40px 40px 40px 40px;
   height: 300px;
@@ -211,12 +198,10 @@ button {
 }
 
 /* Contact Form -------------------- */
-
 form {
   align-self: center;
   justify-self: center;
 }
-
 input,
 textarea {
 	font-size: 18px;
@@ -232,12 +217,10 @@ textarea {
 	background-color: #ffffff;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
-
 label {
 	display: block;
 	margin-bottom: 0.5em; 
 }
-
 .btn-submit {
   margin-left: auto;
   margin-top: 20px;
@@ -252,7 +235,6 @@ label {
   cursor: pointer;
   align-self: flex-end;
 }
-
 .btn-reset {
   margin-left: 2rem;
   margin-top: 20px;
@@ -279,22 +261,49 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 footer img {
   width: 50x;
   height: 50px;
 }
-
 footer p {
 margin: 0 20px;
 }
 
-@media (max-width: 600px) {
+/* Media Queries */
+@media (max-width: 800px) {
   .row,
   .row3 {
     flex-direction: column;
   }
   .row2 {
     flex-direction: column-reverse;
+  }
+    .row,
+    .row2,
+    .row3 {
+      border-radius: 0px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #slideshow {
+      width: 90%;
+      margin-left: 5%;
+    }
+    .container {
+      width: 90%;
+      margin-right: 5%;
+    }
+    li{
+      display: block;
+    }
+    .logo {
+      width: 40%;
+      max-width: 250px;
+    }
+}
+@media (max-width: 1500px) {
+  nav {
+    width: 100%;
+    left: 0;
   }
 }
