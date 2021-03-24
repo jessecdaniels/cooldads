@@ -12,7 +12,8 @@
 
 ## Current Features 
     1. Use a fetch method to grab a random Dad Joke.
-    3. Create and "Cool Dads Meme" array and iterate over it 
+    2. Create and "Cool Dads Meme" array and iterate over it 
+    3. If else statement
     2. Responsive website design
 
 ## Possible Features: 
@@ -26,5 +27,7 @@
     1. Advertisement placement
 
 ## *Acknowledgements*
-The Official [National Fatherhod Intiatve!](https://www.fatherhood.org/) Website    
-I am not affiliated, associated, authorized, endorsed by, or in any way officially connected with any of tehse websites beyond my own adoration.
+The Official [National Fatherhod Initiative!](https://www.fatherhood.org/) Website 
+The [Dad.com](https://www.thedad.com/) Website
+
+I am not affiliated, associated, authorized, endorsed by, or in any way officially connected with any of these websites beyond my own adoration.
