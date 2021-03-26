@@ -92,7 +92,6 @@ function validateForm(event) {
 
 
  const tipbutton = document.querySelector("#tipbutton"); 
-
  const output = document.querySelector(".output"); 
 
   console.log(tipbutton); 
@@ -102,7 +101,7 @@ function validateForm(event) {
     let cooltip = calctip(cost, 0.15);
     let badtip = calctip(cost, 0.05);
     let temp = `<h1>Cool Dads will tip $${cooltip} on $${cost}</h1>`; 
-    temp += `<h4>Bad Dads will tip $${badtip} on $${cost}</h4>`;
+    temp += `<h1>Bad Dads will tip $${badtip} on $${cost}</h1>`;
     document.querySelector("#tipoutput").innerHTML = temp; })
 
     function calctip(amount, percentage){
@@ -113,15 +112,16 @@ function validateForm(event) {
 // -----------------------------------------------------------------------
 // Sticky header - this can also be easily achieved with pure CSS  
 // -----------------------------------------------------------------------
-    window.onscroll = function() {myFunction()};
 
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
