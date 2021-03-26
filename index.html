@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<header>
+<header id="myHeader">
   <img class="logo" src="images/socks-dads-main.png" alt="Socks Plus Sandles // A Place For Cool Dads"/>
   <div class="headline-box">
     <div class="box">  
@@ -20,7 +20,7 @@
 
 <nav>
   <ul class="main-nav">
-    <li><a href="#jokes">DAD JOKES</a></li>
+    <li><a href="#jokes" class="anchor">DAD JOKES</a></li>
     <li><a href="#slideshow">DAD MEMES</a></li>
   </ul>
   <ul class="main-nav">
@@ -30,8 +30,13 @@
 </nav>
 
 </header>
- <main>
- 
+ <main class="content">
+
+<section class="row5 column">
+  <div class="dadphoto">
+  </div>  
+</section>
+
 <section class="row column">
   <h3>Dad Jokes Generator</h3> 
     <img class="badge1" src="images/wreath-jokes-fade.png" alt="dad badge 1">
@@ -52,24 +57,44 @@
 <img class= "badge2" src="images/wreath-memes-fade.png" alt="dad badge 2">
 </section>
 
-<section class="row3 column container2">
-  <img class= "badge3" src="images/wreath-contact-fade.png">
-				<form name="contactForm" action="" method="post"  id="contact">
+<section class="row5 column">
+  <div class="dadphoto2">
+  </div>  
+</section>
+
+<section class="row3 column">
+  <h3>Dad Tip Calculator</h3> 
+  <img class= "badge2" src="images/wreath-memes-fade.png" alt="dad badge 2">
+  <div class="container3">
+  <div class="output">
+  <input id="tipinput" type="number" value="100"> 
+  <button id="tipbutton">Tip</button>
+  <p id="tipoutput"></p> 
+</div> 
+</div> 
+</section>
+
+<section class="row4 column">
+				<form class="container4" name="contactForm" action="" method="post"  id="contact">
 			  	<h3>Contact Form</h3>
 					<label for="fname">First Name:</label> 
 					<input type="text" name="fname" id="fname" placeholder="First Name">
 					<label for="lname">Last Name:</label> 
 					<input type="text" name="lname" id="lname" placeholder="Last Name">
 					<label for="email">Email:</label>
-					<input type="email" id="email" placeholder="email@website.com">
+					<input type="email" name="email" placeholder="email@website.com">
 					<label for="validate">What is 3 + 1?:</label> 
 					<input type="text" name="validate" id="validate">
 	  			<label for="msg">Message:</label>
 			 		<textarea id="msg" rows="5"></textarea>
+        <div>
 					<input class="btn-submit" type="submit" value="Submit">
 					<input class="btn-reset" type="reset" value="Reset"> 
+        </div>
 				</form>
-
+        <img class= "badge3" src="images/wreath-contact-fade.png">
+      </section>
+     
 </main>
 
 <footer>
