@@ -9,23 +9,46 @@ html {
   font-size: 10px;
 }
 h1 {
-  font-weight:400;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
 }
 h2 {
   font-weight: 300;
+  margin-bottom: 10px;
 }
 h3 {
   display: none;
 }
 .logo {
-	width: 250px;
+	width: 200px;
 }
 header {
   text-align: center;
   padding-bottom: 10px;
   font-size: 20px;
+  background-color: white;
 }
- 
+
+/* fixes the header for sticky function */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.anchor {
+
+  top: -250px;
+
+}
+
 /* Navigation */
 nav {
   display: flex;
@@ -50,10 +73,13 @@ body {
   background-color: white;
 }
 nav a {
-  color: rgb(3, 12, 84);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   text-transform: capitalize;
 }
+
+
+
 
 /* Container for flexboxes */
 .row {
@@ -61,6 +87,7 @@ nav a {
   margin-bottom: 20px;
   min-height: 500px;
   display: flex;
+  border-color: tomato;
   border-top-right-radius: 200px;
   border-bottom-right-radius: 200px;
   margin-right: 50px;
@@ -97,11 +124,62 @@ nav a {
  
 }
 
-/* Create 2 equal columns that sits next to each other */
-.column {
+.row4 {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  background: transparent;
+  background-color: rgb(243, 248, 255);
+  box-shadow: 5px 5px rgb(0, 229, 255);
+ 
+}
+
+.row5{
+  display: flex;
+}
+
+  /* The hero image */
+.dadphoto {
+
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F03%2F31%2FDadGroup.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dadphoto2 {
+
+  width: 100vw;
+  height: 60vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F05%2F28%2Fillustration-of-dad-holding-child-9b3ce99a.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* Create equal columns that sits next to each other */
+.column {
+  display: flex;
+  justify-content: center;
+ 
 }
 .container {
   margin: 40px 40px 40px 60px;
@@ -125,8 +203,44 @@ nav a {
   margin-right: 40px;
   line-height: 3rem;
   text-align: justify;
-  
 }
+
+.container3 {
+  margin: 40px 40px 40px 60px;
+  max-width: 500px;
+  min-height: 500px;
+  color:rgb(55, 55, 55);
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: tomato;
+  padding: 50px;
+  box-shadow: 5px 5px rgb(0, 229, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.container4 {
+  margin: 40px 40px 40px 60px;
+  
+  min-width: 400px;
+  max-width: 90%;
+  color:rgb(55, 55, 55);
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: tomato;
+  padding: 50px;
+  box-shadow: 5px 5px rgb(0, 229, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+
+}
+
 button {
   margin-top: 80px;
   width: fit-content;
@@ -148,8 +262,31 @@ button:active {
   display: flex;
   transform: translateY(4px);
 }
+
+.tipbutton {
+  margin-top: 80px;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: rgb(117, 170, 220);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px #999;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.tipbutton:hover {background-color: rgb(117, 170, 220)}
+.tipbutton:active {
+  background-color: rgb(54, 99, 142);
+  box-shadow: 0 3px #666;
+  display: flex;
+  transform: translateY(4px);
+}
+
+
 #slideshow {
-  position: relative; 
   height: 400px;
   width: 600px;
   margin-top: 50px;
@@ -166,17 +303,17 @@ button:active {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
 textarea {
   resize: none;
 }
 .arrow{
-  position: relative; 
-  z-index: 1;
   width: 50px;
   height: 50px;
   padding: 5px;
   box-sizing: border-box;
+
 }
 .arrow-image{
   width: 35px;
@@ -204,6 +341,17 @@ textarea {
   align-self: center;
 }
 
+a, button { outline: none; }
+
+a, a:visited { outline: none; }
+a:hover,
+a:active,
+button,
+a:focus {
+  /*Edit at will*/
+  background: #ccc;  
+}
+
 /* Contact Form -------------------- */
 form {
   align-self: center;
@@ -224,6 +372,19 @@ textarea {
 	background-color: #ffffff;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
+ input {
+ .valid {
+     border-color: #36cc36;
+ }
+ .invalid {border-color:orange}
+}
+
+input.invalid + p {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 label {
 	display: block;
 	margin-bottom: 0.5em; 
@@ -252,7 +413,7 @@ label {
   font-size: 2rem;
   background-color: rgb(117, 170, 220);
   color: rgb(255, 255, 255);
-  border: none;t statu
+  border: none;
   border-radius: 20px;
   box-shadow: 0 6px #999;
   cursor: pointer;
@@ -282,6 +443,8 @@ button:active {
   align-self: flex-start;
 }
 
+
+
 /* Style the footer */
 footer {
   padding: 20px;
@@ -306,30 +469,32 @@ margin: 0 20px;
   .row3 {
     flex-direction: column;
   }
-  .row2 {
+  .row2,
+  .row4 {
     flex-direction: column-reverse;
   }
-    .row,
-    .row2,
-    .row3 {
-      border-radius: 0px;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    #slideshow {
-      width: 90%;
-      margin-left: 5%;
-    }
-    .container {
-      width: 90%;
-      margin-right: 5%;
-    }
-    li{
-      display: block;
-    }
-    .logo {
-      width: 30%;
-      max-width: 250px;
+  .row,
+  .row2,
+  .row3,
+  .row4 {
+    border-radius: 0px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #slideshow {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .container {
+    width: 90%;
+    margin-right: 10%;
+  }
+  li{
+    display: block;
+  }
+  .logo {
+    width: 28%;
+    max-width: 250px;
     }
 }
 @media (max-width: 1500px) {
