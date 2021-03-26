@@ -20,7 +20,7 @@
 
 <nav>
   <ul class="main-nav">
-    <li><a href="#jokes" class="anchor">DAD JOKES</a></li>
+    <li><a href="#jokes">DAD JOKES</a></li>
     <li><a href="#slideshow">DAD MEMES</a></li>
   </ul>
   <ul class="main-nav">
@@ -68,8 +68,11 @@
   <div class="container3">
   <div class="output">
   <input id="tipinput" type="number" value="100"> 
-  <button id="tipbutton">Tip</button>
+  <div>
+  <button id="tipbutton" class="btn-submit">What is the tip?</button>
+  </div>
   <p id="tipoutput"></p> 
+  </p>
 </div> 
 </div> 
 </section>
@@ -88,8 +91,7 @@
 	  			<label for="msg">Message:</label>
 			 		<textarea id="msg" rows="5"></textarea>
         <div>
-					<input class="btn-submit" type="submit" value="Submit">
-					<input class="btn-reset" type="reset" value="Reset"> 
+          <button>Submit</button>
         </div>
 				</form>
         <img class= "badge3" src="images/wreath-contact-fade.png">
