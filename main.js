@@ -5,7 +5,6 @@
 const button = document.querySelector(".container button");
 const jokeDiv = document.querySelector(".container .joke p");
 
-
 document.addEventListener("DOMContentLoaded", getJoke);
 
 button.addEventListener("click", getJoke);
@@ -83,10 +82,46 @@ function validateForm(event) {
       alert("Email must be filled out"); // alert user if last name field is missing 
       event.preventDefault();
   } else if (validate != 4) { 
-      alert("Maybe ask a Cool Dad for help with your math, try again?"); // if user gives any answer other than 4 they give an alert message
+      alert("Maybe you should ask a cool dad for help with math, try again!"); // if user gives any answer other than 4 they give an alert message
+      event.preventDefault();
+    } else if (validate == 4) { 
+      alert("RIGHT ON KID!\nThis cool dad is proud of you.\nWe will touch base soon!"); // if user gives any answer that is exactly 4 they get the positive alert message
       event.preventDefault();
   }
-}
- 
+  }
 
- 
+
+ const tipbutton = document.querySelector("#tipbutton"); 
+
+ const output = document.querySelector(".output"); 
+
+  console.log(tipbutton); 
+    tipbutton.addEventListener("click", function () { 
+    const cost = +document.querySelector("#tipinput").value; 
+    console.log(cost * 0.15); 
+    let cooltip = calctip(cost, 0.15);
+    let badtip = calctip(cost, 0.05);
+    let temp = `<h1>Cool Dads will tip $${cooltip} on $${cost}</h1>`; 
+    temp += `<h4>Bad Dads will tip $${badtip} on $${cost}</h4>`;
+    document.querySelector("#tipoutput").innerHTML = temp; })
+
+    function calctip(amount, percentage){
+      return (amount * percentage).toFixed(2);
+
+    }
+
+// -----------------------------------------------------------------------
+// Sticky header - this can also be easily achieved with pure CSS  
+// -----------------------------------------------------------------------
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
