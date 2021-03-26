@@ -43,11 +43,6 @@ header {
   padding-top: 102px;
 }
 
-.anchor {
-
-  top: -250px;
-
-}
 
 /* Navigation */
 nav {
@@ -77,9 +72,6 @@ nav a {
   text-decoration: none;
   text-transform: capitalize;
 }
-
-
-
 
 /* Container for flexboxes */
 .row {
@@ -159,14 +151,11 @@ nav a {
 }
 
 .dadphoto2 {
-
   width: 100vw;
   height: 60vh;
-  
   display: flex;
   justify-content: center;
   align-items: center;
- 
   background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F05%2F28%2Fillustration-of-dad-holding-child-9b3ce99a.jpg');
   background-size: cover;
   background-position: center top;
@@ -207,8 +196,8 @@ nav a {
 
 .container3 {
   margin: 40px 40px 40px 60px;
-  max-width: 500px;
-  min-height: 500px;
+  min-width: 500px;
+  min-height: 400px;
   color:rgb(55, 55, 55);
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
@@ -224,7 +213,6 @@ nav a {
 
 .container4 {
   margin: 40px 40px 40px 60px;
-  
   min-width: 400px;
   max-width: 90%;
   color:rgb(55, 55, 55);
@@ -242,7 +230,7 @@ nav a {
 }
 
 button {
-  margin-top: 80px;
+  margin-top: 20px;
   width: fit-content;
   padding: 1rem;
   font-size: 2rem;
@@ -259,32 +247,8 @@ button:hover {background-color: rgb(117, 170, 220)}
 button:active {
   background-color: rgb(54, 99, 142);
   box-shadow: 0 3px #666;
-  display: flex;
   transform: translateY(4px);
 }
-
-.tipbutton {
-  margin-top: 80px;
-  width: fit-content;
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: rgb(117, 170, 220);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0 6px #999;
-  text-transform: uppercase;
-  cursor: pointer;
-  align-self: flex-end;
-}
-.tipbutton:hover {background-color: rgb(117, 170, 220)}
-.tipbutton:active {
-  background-color: rgb(54, 99, 142);
-  box-shadow: 0 3px #666;
-  display: flex;
-  transform: translateY(4px);
-}
-
 
 #slideshow {
   height: 400px;
@@ -341,17 +305,6 @@ textarea {
   align-self: center;
 }
 
-a, button { outline: none; }
-
-a, a:visited { outline: none; }
-a:hover,
-a:active,
-button,
-a:focus {
-  /*Edit at will*/
-  background: #ccc;  
-}
-
 /* Contact Form -------------------- */
 form {
   align-self: center;
@@ -362,36 +315,23 @@ textarea {
 	font-size: 18px;
 	font-weight: 300; 
 	width: 100%;
-	border: none;
+	border: solid 1px;
 	height: auto;
 	padding: 15px;
 	margin-bottom: 1.2em;
-	border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-	border-bottom: 3px solid rgba(0,0,0, 0.05);
-	background-color: #ffffff;
+	background-color: #f5f5f5;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-}
- input {
- .valid {
-     border-color: #36cc36;
- }
- .invalid {border-color:orange}
-}
-
-input.invalid + p {
-  opacity: 1;
-  height: auto;
-  margin-bottom: 20px;
 }
 
 label {
 	display: block;
 	margin-bottom: 0.5em; 
 }
-.btn-submit {
+.btn-submit,
+.btn-reset {
   margin-left: auto;
   margin-top: 20px;
+  margin-right: 10px;
   width: fit-content;
   padding: 1rem;
   font-size: 2rem;
@@ -399,52 +339,19 @@ label {
   color: white;
   border: none;
   border-radius: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-  align-self: flex-end;
-}
-
-
-/* button {
-  margin-left: auto;
-  margin-top: 20px;
-  width: fit-content;
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: rgb(117, 170, 220);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 20px;
   box-shadow: 0 6px #999;
+  text-transform: uppercase;
   cursor: pointer;
   align-self: flex-end;
 }
-button:hover {background-color: rgb(117, 170, 220)}
-button:active {
-  background-color: rgb(54, 99, 142);
-  box-shadow: 0 3px #666;
-  display: flex;
-  transform: translateY(4px);
-}
-*/
 
-.btn-reset {
-  margin-left: 2rem;
-  margin-top: 20px;
-  width: fit-content;
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: rgb(54, 99, 142);
-  color:rgb(255, 255, 255);
-  border: none;
-  border-radius: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-  align-self: flex-start;
+#tipoutput{
+font-weight: 300;
+padding: 20px;
+
 }
 
-
-
+ 
 /* Style the footer */
 footer {
   padding: 20px;
