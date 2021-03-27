@@ -99,7 +99,7 @@ function validateForm(event) {
     const cost = +document.querySelector("#tipinput").value; 
     console.log(cost * 0.15); 
     let cooltip = calctip(cost, 0.15);
-    let badtip = calctip(cost, 0.05);
+    let badtip = calctip(cost, 0.02);
     let temp = `<h1>Cool Dads will tip $${cooltip} on $${cost}</h1>`; 
     temp += `<h1>Bad Dads will tip $${badtip} on $${cost}</h1>`;
     document.querySelector("#tipoutput").innerHTML = temp; })
@@ -110,18 +110,19 @@ function validateForm(event) {
     }
 
 // -----------------------------------------------------------------------
-// Sticky header - this can also be easily achieved with pure CSS  
+// Sticky header - I ended up using just css for this but left it here 
+// to remember how I did it with JS 
 // -----------------------------------------------------------------------
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+// var header = document.getElementById("myHeader");
+// var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }

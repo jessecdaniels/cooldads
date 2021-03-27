@@ -8,6 +8,11 @@ html {
   font-family: "Montserrat";
   font-size: 10px;
 }
+body {
+  background-color: white;
+
+}
+
 h1 {
   font-weight: 400;
   margin-top: 8px;
@@ -25,15 +30,18 @@ h3 {
 	width: 200px;
 }
 header {
+  position: fixed;
   text-align: center;
+  width: 100%;
   padding-bottom: 10px;
   font-size: 20px;
   background-color: white;
+  z-index: 1000;
 }
 
 /* fixes the header for sticky function */
 
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -41,7 +49,7 @@ header {
 
 .sticky + .content {
   padding-top: 102px;
-}
+} */
 
 
 /* Navigation */
@@ -64,9 +72,7 @@ li {
   margin-left: auto;
   display:inline-block;
 }
-body {
-  background-color: white;
-}
+
 nav a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -138,16 +144,17 @@ nav a {
   /* The hero image */
 .dadphoto {
 
-    width: 100vw;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F03%2F31%2FDadGroup.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  width: 100vw;
+  height: 60vh;
+  padding-top: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F03%2F31%2FDadGroup.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .dadphoto2 {
@@ -195,15 +202,15 @@ nav a {
 }
 
 .container3 {
-  margin: 40px 40px 40px 60px;
-  min-width: 500px;
+  margin: 40px 40px 40px 40px;
+  min-width: 400px;
   min-height: 400px;
   color:rgb(55, 55, 55);
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   border: 2px solid;
   border-color: tomato;
-  padding: 50px;
+  padding: 70px;
   box-shadow: 5px 5px rgb(0, 229, 255);
   display: flex;
   flex-direction: column;
@@ -212,7 +219,7 @@ nav a {
 }
 
 .container4 {
-  margin: 40px 40px 40px 60px;
+  margin: 40px 40px 40px 40px;
   min-width: 400px;
   max-width: 90%;
   color:rgb(55, 55, 55);
@@ -347,16 +354,16 @@ label {
 
 #tipoutput{
 font-weight: 300;
-padding: 20px;
+margin-top: 45px;
+margin-bottom: -60px;
 
 }
 
- 
 /* Style the footer */
 footer {
   padding: 20px;
   color: rgb(255, 255, 255);
-  background-color: rgb(43, 109, 181);
+  background-color: rgb(21, 61, 104);
   font-size: 20px;
   display: flex;
   justify-content: center;
@@ -371,7 +378,7 @@ margin: 0 20px;
 }
 
 /* Media Queries */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .row,
   .row3 {
     flex-direction: column;
@@ -389,11 +396,13 @@ margin: 0 20px;
     margin-right: 0;
   }
   #slideshow {
-    width: 90%;
+    width: 80%;
     margin-left: 5%;
   }
-  .container {
-    width: 90%;
+  .container,
+  .container3
+  .joke {
+    width: 80%;
     margin-right: 10%;
   }
   li{
