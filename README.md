@@ -15,9 +15,9 @@
     3. A Cool Dad needs to watch his sodium. Grab a low sodium Trader Joes items via CSV file I have.
 
 ## *Acknowledgements*
-The Official [National Fatherhood Initiative!](https://www.fatherhood.org/) Website 
-The [Dad.com](https://www.thedad.com/) Website
-API fetch coming from [I Can Haz Dad Joke](https://icanhazdadjoke.com/)
-Dade memes downloaded from [Memedroid.com](https://www.memedroid.com/memes/tag/dad)
+    1. The Official [National Fatherhood Initiative!](https://www.fatherhood.org/) Website 
+    2. The [Dad.com](https://www.thedad.com/) Website
+    3. API fetch coming from [I Can Haz Dad Joke](https://icanhazdadjoke.com/)
+    4. Dads memes downloaded from [Memedroid.com](https://www.memedroid.com/memes/tag/dad)
 
 I am not affiliated, associated, authorized, endorsed by, or in any way officially connected with any of these websites beyond my own adoration.
