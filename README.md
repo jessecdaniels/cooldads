@@ -1,4 +1,4 @@
-# **Socks Plus Sandles // A Place For Cool Dads**  
+# **Socks Plus Sandals // A Place For Cool Dads**  
 # :thumbsup: :hammer: :necktie: :walking: :beers: :doughnut: :camera: :briefcase: :wrench: :golf: :punch: :older_man: :dog: :watch: :hamburger:
 
 ### Goal: Create a website for "Cool Dads"
