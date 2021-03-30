@@ -8,7 +8,8 @@ Now that I am a father, I am trying very hard to impress my two daughters. While
     1. Dad Jokes: Uses fetch method to retrieve a random dad joke and display it when the 
     "Dad Joke Button" is clicked.
     2. Dad Memes: Create array of memes, iterate over it, and display the meme in a slideshow. 
-    3. Dad Tips: Creates a function that accepts a tip value, calculates a new tip on those inputs, then returns the new values; cool dad and bad dad tips
+    3. Dad Tips: Creates a function that accepts a tip value, calculates a new tip on those inputs, 
+    then returns the new values; cool dad and bad dad tips
     4. Responsive website design using flexbox and media queries.
 
 ## Roadmap
