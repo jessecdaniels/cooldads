@@ -23,7 +23,7 @@ Now that I am a father, I try very hard to impress my two daughters. While they 
 
 ## *Acknowledgements*
 * The Official [National Fatherhood Initiative!](https://www.fatherhood.org/)
-* Dad.com](https://www.thedad.com/)
+* Dad.com (https://www.thedad.com/)
 * API fetch coming from [I Can Haz Dad Joke](https://icanhazdadjoke.com/)
 * Dads memes downloaded from [Memedroid.com](https://www.memedroid.com/memes/tag/dad)
 
