@@ -13,7 +13,7 @@ Now that I am a father, I try very hard to impress my two daughters. While they 
     4. Responsive website design using flexbox and media queries.
 
 ## Roadmap
-    1. Clean up some of the repitation in the CSS. 
+    1. Clean up some of the repetation in the CSS. 
     2. A Cool Dad needs a beer. Create random beer or brewery generator.
     3. A Cool Dad needs to watch his sodium. Grab a low sodium Trader Joes items via CSV.
 
@@ -22,9 +22,9 @@ Now that I am a father, I try very hard to impress my two daughters. While they 
 * Jesse Daniels  
 
 ## *Acknowledgements*
-* The Official [National Fatherhood Initiative!](https://www.fatherhood.org/) Website 
-* The [Dad.com](https://www.thedad.com/) Website
+* The Official [National Fatherhood Initiative!](https://www.fatherhood.org/)
+* Dad.com](https://www.thedad.com/)
 * API fetch coming from [I Can Haz Dad Joke](https://icanhazdadjoke.com/)
 * Dads memes downloaded from [Memedroid.com](https://www.memedroid.com/memes/tag/dad)
 
-I am not affiliated, associated, authorized, endorsed by, or in any way officially connected with any of these websites beyond my own adoration.
+I am not affiliated, endorsed by, or in any way officially connected with the acknowledged websites beyond my own adoration.
