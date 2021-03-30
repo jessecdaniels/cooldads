@@ -5,11 +5,10 @@
 Now that I am a father, I am trying very hard to impress my two daughters. While they don't understand Javascript, they do have a basic understanding of the internet and how it has something to do with iPads. So this website is to practice and showcase my HTML, CSS and Javascript skills that I have been working on during my time as a student at Code Louisville. It is also to impress my daughters by showing them that I am, and always will be, a "Cool Dad!"   
 
 ## Current Features 
-    1. Dad Jokes: Uses fetch method to retrieve a random dad joke and display it when the 
-    "Dad Joke Button" is clicked.
+    1. Dad Jokes: Uses fetch method to retrieve a random dad joke and display it.
     2. Dad Memes: Create array of memes, iterate over it, and display the meme in a slideshow. 
-    3. Dad Tips: Creates a function that accepts a tip value, calculates a new tip on those inputs, 
-    then returns the new values; cool dad and bad dad tips
+    3. Dad Tips: Creates function that accepts a tip value, calculates and returns new tip values. 
+    4. Touch Base: Contact form with validation.
     4. Responsive website design using flexbox and media queries.
 
 ## Roadmap
