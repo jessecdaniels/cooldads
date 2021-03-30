@@ -28,4 +28,4 @@ Now that I am a father, I try very hard to impress my two daughters. While they 
 * Dads memes downloaded from [Memedroid.com](https://www.memedroid.com/memes/tag/dad)
 * All the Code Louisville Staff & Mentors
 
-I am not affiliated, endorsed by, or in any way officially connected with the acknowledged websites beyond my own adoration.
+I am not affiliated, endorsed by, or officially connected with the acknowledged websites beyond my own adoration.
