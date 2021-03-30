@@ -14,7 +14,7 @@ Now that I am a father, I am trying very hard to impress my two daughters. While
 ## Roadmap
     1. Clean up some of the repitation in the CSS. 
     2. A Cool Dad needs a beer. Create random beer or brewery generator.
-    3. A Cool Dad needs to watch his sodium. Grab a low sodium Trader Joes items via CSV file I have.
+    3. A Cool Dad needs to watch his sodium. Grab a low sodium Trader Joes items via CSV.
 
 ## *Acknowledgements*
     1. The Official [National Fatherhood Initiative!](https://www.fatherhood.org/) Website 
